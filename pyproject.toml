@@ -1,10 +1,21 @@
 [project]
 name = "examples"
 version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jay Qi", email = "jayqi@users.noreply.github.com" }
+]
 requires-python = "~=3.13"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
+    "pytest",
     "ruff",
 ]
 
@@ -21,4 +32,5 @@ select = [
 unfixable = ["F"]
 
 [tool.ruff.lint.isort]
+known-first-party = ["examples"]
 force-sort-within-sections = true

@@ -10,7 +10,7 @@ def find_pyproject_toml() -> Path:
     while current_dir.parent != current_dir:
         if (current_dir / "pyproject.toml").exists():
             with (current_dir / "pyproject.toml").open("rb") as f:
-                pyproject = tomllib.load(f.read())
+                pyproject = tomllib.load(f)
             if pyproject.get("project", {}).get("name") == project_name:
                 return current_dir
         current_dir = current_dir.parent
