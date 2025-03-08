@@ -1,0 +1,44 @@
+name: tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: extractions/setup-just@v2
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Lint code
+        run: |
+          just lint
+
+      - name: Run tests
+        run: |
+          just test
+
+  uncommitted-changes:
+    name: Uncommitted changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: extractions/setup-just@v2
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Render README
+        run: |
+          just render-readme
+
+      - name: Check for uncommitted changes
+        run: |
+          git diff --exit-code
