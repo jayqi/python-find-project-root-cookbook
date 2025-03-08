@@ -1,0 +1,19 @@
+# Python Project Root Cookbook
+
+Reference code examples to find the root directory of your project using different approaches
+
+## Find pyproject.toml file
+
+{find_pyproject_toml}
+
+## Find pyproject.toml file matching project name
+
+{find_pyproject_toml_project_name}
+
+## Find .git directory
+
+{find_git}
+
+## Find a specific file containing a specific value
+
+{find_marker_file}

@@ -1,0 +1,24 @@
+[project]
+name = "examples"
+version = "0.1.0"
+requires-python = "~=3.13"
+
+[dependency-groups]
+dev = [
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 88
+src = ["examples", "main.py", "tests.py"]
+
+[tool.ruff.lint]
+select = [
+  "E", # Pyflakes
+  "F", # Pycodestyle
+  "I", # isort
+]
+unfixable = ["F"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
