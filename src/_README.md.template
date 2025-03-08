@@ -2,11 +2,11 @@
 
 [![tests](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml?query=workflow%3Atests+branch%3Amain)
 
-Code examples to find the root directory of your project in different ways. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object. This can be useful in projects where you are reading or writing data to directories inside your project directory.
+Simple and short code examples to find the root directory of your project in different ways. This can be useful in projects where you are reading or writing data to directories inside your project directory. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object.
 
 All code in this repository is licensed under the [MIT No Attribution (MIT-0) License](./LICENSE) and can be used without attribution.
 
-If for some reason you prefer a take on a dependency for this functionality instead, see [pyprojroot](https://github.com/chendaniely/pyprojroot).
+If for some reason you prefer a take on a dependency instead of copy-pasting a small amount of code, see these packages: [pyprojroot](https://github.com/chendaniely/pyprojroot), [rootpath](https://github.com/grimen/python-rootpath)
 
 ## Cookbook
 
