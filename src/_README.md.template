@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml?query=workflow%3Atests+branch%3Amain)
 
-Code examples to find the root directory of your project based on different criteria. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object. This can be useful in projects where you are reading or writing data to directories inside your project directory.
+Code examples to find the root directory of your project in different ways. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object. This can be useful in projects where you are reading or writing data to directories inside your project directory.
 
 All code in this repository is licensed under the [MIT No Attribution (MIT-0) License](./LICENSE) and can be used without attribution.
 
