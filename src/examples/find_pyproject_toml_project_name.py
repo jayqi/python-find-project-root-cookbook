@@ -2,7 +2,7 @@ from pathlib import Path
 import tomllib
 
 
-def find_pyproject_toml() -> Path:
+def proj_root_from_pyproject_toml() -> Path:
     """Find the nearest parent directory containing pyproject.toml where the project
     name is 'my-project-name'."""
     project_name = "my-project-name"

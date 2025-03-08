@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def find_git() -> Path:
+def proj_root_from_git() -> Path:
     """Find the nearest parent directory containing .git."""
     current_dir = Path.cwd()
     while current_dir.parent != current_dir:

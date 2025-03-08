@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def find_marker() -> Path:
+def proj_root_from_marker_file() -> Path:
     """Find the nearest parent directory containing a file '.marker' whose contents are
     'value'."""
     marker_file_name = ".marker"

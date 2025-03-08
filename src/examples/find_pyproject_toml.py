@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def find_pyproject_toml() -> Path:
+def proj_root_from_pyproject_toml() -> Path:
     """Find the nearest parent directory containing pyproject.toml."""
     current_dir = Path.cwd()
     while current_dir.parent != current_dir:
