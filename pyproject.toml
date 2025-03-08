@@ -17,6 +17,7 @@ build-backend = "hatchling.build"
 dev = [
     "pytest",
     "ruff",
+    "tomli-w>=1.2.0",
 ]
 
 [tool.ruff]
