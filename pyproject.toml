@@ -1,7 +1,7 @@
 [project]
 name = "examples"
 version = "0.1.0"
-description = "Add your description here"
+description = "Code examples to find the root directory of your project in different ways."
 readme = "README.md"
 authors = [
     { name = "Jay Qi", email = "jayqi@users.noreply.github.com" }
