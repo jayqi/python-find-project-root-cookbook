@@ -4,9 +4,9 @@
 
 Simple and short code examples to find the root directory of your project in different ways. This can be useful in projects where you are reading or writing data to directories inside your project directory. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object.
 
-All code in this repository is licensed under the [MIT No Attribution (MIT-0) License](./LICENSE) and can be used without attribution.
+To use, just copy and paste one of the examples into your project. Make any adjustments as needed or desired. These examples are all fairly straightforward and generally have no external dependencies. All code in this repository is licensed under the [MIT No Attribution (MIT-0) License](./LICENSE) and can be used without attribution.
 
-If for some reason you prefer a take on a dependency instead of copy-pasting a small amount of code, see these packages: [pyprojroot](https://github.com/chendaniely/pyprojroot), [rootpath](https://github.com/grimen/python-rootpath)
+If for some reason you prefer to take on a dependency or to have a function resolve a bunch of criteria automagically, see these packages as alternatives: [pyprojroot](https://github.com/chendaniely/pyprojroot), [rootpath](https://github.com/grimen/python-rootpath)
 
 ## Cookbook
 
@@ -20,9 +20,13 @@ Table of contents:
 
 ### Find pyproject.toml file
 
+[`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) is a modern standard configuration file for packaging metadata and tools configuration. It's typically in the project root directory of Python projects.
+
 {find_pyproject_toml}
 
 ### Find pyproject.toml file matching project name
+
+If you're in a monorepo with multiple Python packages, you may want to find the specific intended `pyproject.toml` file by matching on its contents.
 
 {find_pyproject_toml_project_name}
 
@@ -44,12 +48,18 @@ Table of contents:
 
 ### Find .git directory
 
+If using Git as your version control system, there will be a `.git` directory in your project root.
+
 {find_git}
 
-### Find a specific file containing a specific value
+### Find a .here file
 
-{find_marker_file}
+Popularized by R's [here](https://here.r-lib.org/) package, some project root detection tools support finding a file named `.here`.
+
+{find_here_file}
 
 ### Read from environment variable
+
+Environment variables are a good way specify configuration values that vary between running environments.
 
 {read_from_env_var}
