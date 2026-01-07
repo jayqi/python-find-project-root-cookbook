@@ -1,6 +1,6 @@
 # Python Find Project Root Cookbook
 
-[![tests](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jayqi/reprexlite/actions/workflows/tests.yml?query=workflow%3Atests+branch%3Amain)
+[![tests](https://github.com/jayqi/python-find-project-root-cookbook/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jayqi/python-find-project-root-cookbook/actions/workflows/tests.yml?query=workflow%3Atests+branch%3Amain)
 
 Simple and short code examples to find the root directory of your project in different ways. This can be useful in projects where you are reading or writing data to directories inside your project directory. All examples return a [`pathlib.Path`](https://docs.python.org/3/library/pathlib.html) object.
 
