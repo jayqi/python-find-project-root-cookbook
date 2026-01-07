@@ -44,7 +44,7 @@ def main():
             code=example_file.read_text().strip()
         )
 
-    rendered = template.format(**examples).strip()
+    rendered = template.format(**examples).strip() + "\n"
     (project_root / "README.md").write_text(rendered)
 
 
